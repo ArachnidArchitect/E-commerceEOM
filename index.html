@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Surf Life - Home</title>
 </head>
+
 <body>
-    <nav> 
+    <nav>
         <div class="logo"> <img src="./IMAGES/Logo.png" alt="Surf Life Logo"></div>
-        <div id="navLinks"> 
+        <div id="navLinks">
             <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="./HTML/about.html">About</a></li>
-            <li><a href="./HTML/products.html">Products</a></li>
-            <li><a href="./HTML/contact.html">Contact</a></li>
-        </ul></div>
+                <li><a href="#">Home</a></li>
+                <li><a href="./HTML/about.html">About</a></li>
+                <li><a href="./HTML/products.html">Products</a></li>
+                <li><a href="./HTML/contact.html">Contact</a></li>
+            </ul>
+        </div>
         <div class="navEnd">
             <a href="./HTML/cart.html"><img src="./IMAGES/image.png.png" alt=""></a>
             <img src="./IMAGES/image.png (1).png" alt="">
@@ -23,12 +27,64 @@
 
     </nav>
 
-    <main>
+    <main id="landing">
+        <div class="rad-shadow">
+            <div class="landingContainer">
+                <div class="cardContainer">
+                    <div class="landingCardTemplate LCTcard1">
+                        <div class="LCTRow1"> <img src="./IMAGES/fanatic.png" alt="" width="161px">
+                            <h1 class="stoked">#STOKED</h1>
+                        </div>
 
+                        <div class="LCTRow2"> <span>Advanced</span>
+                            <h3>Ray Fanatic Pure Light(5'12")</h3>
+                        </div>
+                        <div class="LCTRow3">
+                            <button class="LCTbtn">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="landingCardTemplate LCTcard2">
+                        <div class="LCTRow1"> <img src="./IMAGES/cabana.png" width="" alt="" width="161px">
+                            <h1 class="stoked">#STOKED</h1>
+                        </div>
+
+                        <div class="LCTRow2"> <span>Advanced</span>
+                            <h3>Cabana 15 Lulu Dk</h3>
+                        </div>
+                        <div class="LCTRow3">
+                            <button class="LCTbtn">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="landingTitle"><img src="./IMAGES/LogoText.png" alt=""></div>
+                <div class="landingBrowse">
+                    <div class="landingBrowseTemplate" data-aos="fade-left" data-aos-duration="1000">
+                        <h3>Browse</h3>
+                        <div class="landingGallery">
+                            <div class="galleryCard">
+                                <img src="./IMAGES/coiledLeash.png" alt="">
+                                <span>R200.89</span>
+                            </div>
+                            <div class="galleryCard">
+                                <img src="./IMAGES/sexWax.png" alt="">
+                                <span>R79.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </main>
     <footer>
         ©Surf Life Ltd. 2024
         idk
     </footer>
+    <script src="./SCRIPTS/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
