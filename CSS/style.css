@@ -176,6 +176,36 @@ margin-right: -50px;
         width: 90%;
     }
 
+/* products section styling */
+#products{
+    height: 100vh;
+    display: flex;
+}
+#prodFilter{
+    width: 25%;
+    background-color: #82d49658;
+    height: 100%;
+
+}
+.grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minMax(200px, 1fr));
+    background-color: black;
+    padding: 1em;
+    gap:2em;
+    border: 1px white solid;
+}
+.grid-item{
+    background-color: black;
+}
+
+
+
+
+
+
+
     /* card animations */
     @keyframes disappear {
         from {transform: translateX(0px); opacity:100%; }
