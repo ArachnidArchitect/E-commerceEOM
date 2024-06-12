@@ -13,43 +13,119 @@
         <div class="logo"> <img src="../IMAGES/Logo.png" alt="Surf Life Logo"></div>
         <div id="navLinks">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="../HTML/about.html">About</a></li>
-                <li><a href="../HTML/products.html">Products</a></li>
-                <li><a href="../HTML/contact.html">Contact</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="/HTML/about.html">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="./HTML/contact.html">Contact</a></li>
             </ul>
         </div>
         <div class="navEnd">
-            <a href="../HTML/cart.html"><img src="../IMAGES/image.png.png" alt=""></a>
+            <a href="./cart.html"><i class="fa-regular fa-cart-shopping" style="color: #ffffff;"></i></a>
             <img src="../IMAGES/image.png (1).png" alt="">
+            
+            <div id="any">
+                <ul id="navAccList">
+                <li>Login</li>
+                <li>Sign Up</li>
+                <li>Admin</li>
+            </ul>
+        </div>
         </div>
 
     </nav>
 
     <main id="products">
+<!-- filter code goes here -->
+ <button class="offscreen-filter"><i class="fa-solid fa-sliders fa-beat-fade">
+</i></button>
         <div id="prodFilter">
+                 <div class="filter-row FRow1">
+                    <i class="fa-solid fa-sliders">
+                    </i><h1>Filters</h1>
+                    <i class="fa-solid fa-x"></i> 
+                </div>
 
+                <div class="filter-row FRow2">
+                    <div class="filter-column">
+                        <div class="filter-title"><h1>Categories</h1></div>
+                        <div class="filter-form">
+                            <form action="">
+                                <strong><p>Boards</p></strong>
+                                <input type="checkbox" id="surfboard-checkbox" name="boards">
+                                <label for="surfboard-checkbox">Surfboards</label><br>
+
+                                <input type="checkbox" id="paddelboard-checkbox" name="boards">
+                                <label for="paddelboard-checkbox">Paddel boards</label><br>
+
+                                <input type="checkbox" id="bodyboard-checkbox" name="boards">
+                                <label for="bodyboard-checkbox">Body boards</label><br>
+
+                                <strong><p>Swimwear</p></strong>
+                                <input type="radio" id="swimwearM-radio" name="Swimwear">
+                                <label for="swimwearM-radio">Male</label><br>
+
+                                <input type="radio" id="swimwearF-radio" name="Swimwear">
+                                <label for="swimwearF-radio">Female</label><br>
+
+                                <input type="radio" id="swimwearO-radio" name="Swimwear">
+                                <label for="swimwearO-radio">Undecided</label><br>
+
+                                <strong><p>Accessories</p></strong>
+                                <input type="checkbox" id="leash-checkbox" name="Accessories">
+                                <label for="leash-checkbox">Leashes</label><br>
+                                <input type="checkbox" id="wax-checkbox" name="Accessories">
+                                <label for="wax-checkbox">Wax</label><br>
+                                <input type="checkbox" id="goggles-checkbox" name="Accessories">
+                                <label for="goggles-checkbox">Goggles</label><br>
+                                <input type="checkbox" id="flippers-checkbox" name="Accessories">
+                                <label for="flippers-checkbox">Flippers</label><br>
+                                <button>Filter</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
         </div>
+
+
+
+
+
+
+
+
+<!-- grid code goes here -->
         <div class="grid">
-            <div class="grid-item"><img src="../IMAGES/sexWax.png" alt="">kjkh</div>
-            <div class="grid-item"><img src="../IMAGES/sexWax.png" alt=""></div>
-            <div class="grid-item"><img src="../IMAGES/sexWax.png" alt=""></div>
-            <div class="grid-item"><img src="../IMAGES/sexWax.png" alt=""></div>
-            <div class="grid-item"><img src="../IMAGES/sexWax.png" alt="">kjkh</div>
-            <div class="grid-item"><img src="../IMAGES/sexWax.png" alt=""></div>
-            <div class="grid-item"><img src="../IMAGES/sexWax.png" alt=""></div>
-            <div class="grid-item"><img src="../IMAGES/sexWax.png" alt=""></div>
-            <div class="grid-item"><img src="../IMAGES/sexWax.png" alt="">kjkh</div>
-            <div class="grid-item"><img src="../IMAGES/sexWax.png" alt=""></div>
-            <div class="grid-item"><img src="../IMAGES/sexWax.png" alt=""></div>
-            <div class="grid-item"><img src="../IMAGES/sexWax.png" alt=""></div>
+            <!-- copy this to js -->
+            <!-- <div class="grid-item">
+                <div class="gridRow1">
+                    <img src="../IMAGES/Rectangle 7.png" alt="">
+                </div>
+                <div class="gridRow2">
+                    <span>Intermediate</span>
+                    <h3>Visla - 6 ft 1 inch</h3>
+                    <h3>R3000</h3>
+
+                </div>
+                <div class="gridRow3">
+                    <div class="grid-btns">
+                        <button class="grid-btn-vm">View More</button>
+                        <button class="grid-btn-atc">Add To Cart</button>
+                    </div>
+                </div>
+            </div> -->
+            <!-- until the div above this -->
+
+
+
         </div>
 
     </main>
     <footer>
         ©Surf Life Ltd. 2024
     </footer>
-
+    <script src="../SCRIPTS/products.js"></script>
+ 
+    <script src="https://kit.fontawesome.com/eb25ce82bc.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
