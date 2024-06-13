@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
     <title>Surf Life - My Cart</title>
+    <script src="https://kit.fontawesome.com/eb25ce82bc.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -37,6 +38,7 @@
 
     <main id="cart">
         <div class="cart-column">
+            <h1 class="cart-header">My Cart</h1>
             <div class="cart-row">
                 <div class="cart-card">
                     <div class="cart-card-image"><img src="../IMAGES/prodImages/peter-lawson-all-rounder.png" alt="">
@@ -46,12 +48,20 @@
                             <h3>Peter Lawson All Rounder</h3>
                         </div>
                         <div class="cart-card-info-row">
+                            <h4>Price:R6000</h4>
+                        </div>
+                        <div class="cart-card-info-row">
                             <h4>QTY:1</h4>
                         </div>
                     </div>
                     <div class="cart-card-btns">
-                        <button class="cart-btn-up">+</button>
-                        <button class="cart-btn-down">-</button>
+                        <div class="cart-upDwn">
+                            <button class="cart-btn-up">+</button>
+                            <button class="cart-btn-down">-</button>
+                        </div>
+                        <div class="trash">
+                            <i class="fa-regular fa-trash"></i>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,8 +74,9 @@
         ©Surf Life Ltd. 2024
     </footer>
     <script src="../SCRIPTS/cart.js"></script>
-
     <script src="https://kit.fontawesome.com/eb25ce82bc.js" crossorigin="anonymous"></script>
+
+  
 </body>
 
 </html>

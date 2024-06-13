@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -308,7 +309,14 @@ font-weight: 600;
     height: 100vh;
     color: white;
 }
-
+.cart-header{
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        padding: 1em;
+      
+}
 
 .cart-column{
     display: flex;
@@ -319,11 +327,21 @@ font-weight: 600;
     flex-direction: row;
 }
 .cart-card{
-    width: 70%;
-    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
     border-bottom: #4BCAD4 1px solid;
+    padding: 0 5em;
+    justify-content: space-between;
+    align-items: center;
 }
-
+.cart-card-info{
+    padding-left: 2em;
+}
+.cart-upDwn{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 0 1em;
+}
 
 
 /* hover for nav */
