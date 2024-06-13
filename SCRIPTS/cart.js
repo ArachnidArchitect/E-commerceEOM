@@ -23,12 +23,8 @@ purchasedItems.forEach(purchasedItem => {
                         </div>
                     </div>
                     <div class="cart-card-btns">
-                        <div class="cart-upDwn">
-                            <button class="cart-btn-up" value="${purchasedItem.id}">+</button>
-                            <button class="cart-btn-down" value="${purchasedItem.id}">-</button>
-                        </div>
                         <div class="trash">
-                            <i class="fa-regular fa-trash"></i>
+                            <i class="fa-solid fa-trash" class="delete-item"></i>
                         </div>
                     </div>
                 </div>
@@ -44,7 +40,25 @@ sum += total
 let totalDisplay = document.querySelector('#cart-total')
 totalDisplay.innerHTML = `Total: R ${sum}`
 
+// delete item
+// Get the trash buttons again after rendering cart items
+let trashButtons = HTMLpage.querySelectorAll('.trash i.fa-solid');
 
+// Add event listeners to the delete buttons
+trashButtons.forEach(deleteBtn => {
+  deleteBtn.addEventListener('click', (e) => {
+    let itemName = e.target.getAttribute('data-item-name');
+    let confirmDelete = confirm(`Are you sure you want to delete ${itemName}?`);
+    if (confirmDelete) {
+      let parent = e.target.parentNode.parentNode.parentNode;
+      parent.remove();
+      let index = purchasedItems.findIndex(item => item.name === itemName);
+      purchasedItems.splice(index, 1);
+      localStorage.setItem("purchasedItems", JSON.stringify(purchasedItems));
+      updateTotal();
+    }
+  });
+});
 
 // Js for profile options
 let profile = document.querySelector('.navEnd img')
