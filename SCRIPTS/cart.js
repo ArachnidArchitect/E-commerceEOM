@@ -59,7 +59,7 @@ trashButtons.forEach(deleteBtn => {
     }
   });
 });
-
+zz
 // Js for profile options
 let profile = document.querySelector('.navEnd img')
 let profileMenu = document.querySelector('#navAccList')

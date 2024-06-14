@@ -32,7 +32,7 @@ let comp = new ProdItems(8, 'Xcel Comp 4.3', '', 'Intermediate', 5795, '../IMAGE
 
 let female = new ProdItems(9, 'Xcel Ladies Comp 4.3', '', 'Intermediate', 6995, '../IMAGES/prodImages/Xcel-female.png', 'swimwear', 'female', 0);
 myProducts.push(pyzel, maytrix, plwideboy, plAllRounder, olaian, raptor, phoenix, comp, female)
-
+localStorage.setItem('myProducts', JSON.stringify(myProducts))
 
 
 //adding items to the grid

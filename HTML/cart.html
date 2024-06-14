@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="nav1">
         <div class="logo"> <img src="../IMAGES/Logo.png" alt="Surf Life Logo"></div>
         <div id="navLinks">
             <ul>
@@ -28,12 +28,47 @@
                 <ul id="navAccList">
                 <li>Login</li>
                 <li>Sign Up</li>
-                <li>Admin</li>
+                <li><a href="./admin.html">Admin</a></li>
             </ul>
         </div>
         </div>
 
     </nav>
+    <nav class="navbar bg-body-tertiary fixed-top" id="nav2">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Offcanvas navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./products.html">Products</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./admin.html">Admin</a>
+                  </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
 
     <main id="cart">
 
