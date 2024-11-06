@@ -35,41 +35,47 @@
         </div>
 
     </nav>
-    <nav class="navbar bg-body-tertiary fixed-top" id="nav2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Offcanvas navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    <nav class="navbar bg-body-dark fixed-top bg-dark" id="nav2">
+        <div class="container-fluid justify-content-between">
+            <img src="./IMAGES/Logo.png" alt="Surf Life Logo">
+            <div>
+                <a href="./HTML/cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </button>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
-                  </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./admin.html">Admin</a>
-                  </li>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./HTML/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Products</a>
+                        </li>
 
-              </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./HTML/contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./HTML/admin.html">Admin</a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
-      </nav>
+    </nav>
 
     <main id="products">
 <!-- filter code goes here -->
@@ -158,7 +164,25 @@
         </div>
 
     </main>
-    <footer>
+    <footer class="bg-dark text-center">
+        <div class=" d-flex flex-row justify-content-evenly">
+            <div class="d-flex flex-column">
+                <h4>FAQ</h4>
+                <h6>How do I track my order?</h6>
+                <h6>Where are you based</h6>
+                <h5></h5>
+                </div>
+            <div class="d-flex flex-column">
+                <h4>CONTACT US</h4>
+                <div class="d-flex flex-row">
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com/taahir68"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#0671358236"><i class="fa-brands fa-whatsapp"></i></a>
+    
+                </div>
+            </div>
+
+        </div>
         ©Surf Life Ltd. 2024
     </footer>
     <script src="../SCRIPTS/products.js"></script>

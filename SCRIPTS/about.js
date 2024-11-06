@@ -13,3 +13,14 @@ profile.addEventListener('mouseover', () => {
 
 
 })
+let shoppingCart = document.querySelector('i.fa-cart-shopping')
+let tester = JSON.parse(localStorage.getItem('purchasedItems'))
+
+    if (tester.length>0) {
+        shoppingCart.setAttribute("class", "fa-solid fa-cart-shopping fa-bounce");
+    }else{
+        console.log('im empty')
+        console.log(tester)
+    }
+    
+

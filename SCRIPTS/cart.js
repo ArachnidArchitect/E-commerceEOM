@@ -4,6 +4,17 @@ let purchasedItems = JSON.parse(localStorage.getItem("purchasedItems"))
 let HTMLpage = document.querySelector('.cart-column')
 let sum = 0
 
+let shoppingCart = document.querySelector('i.fa-cart-shopping')
+function emptyOrNah() {
+    let tester = JSON.parse(localStorage.getItem('purchasedItems'))
+    if (tester.length>0) {
+        shoppingCart.setAttribute("class", "fa-solid fa-cart-shopping fa-bounce");
+    }else{
+        shoppingCart.setAttribute("class", "fa-solid fa-cart-shopping");
+    }
+    
+}
+emptyOrNah()
 
 purchasedItems.forEach(purchasedItem => {
     HTMLpage.innerHTML += `  
@@ -56,10 +67,11 @@ trashButtons.forEach(deleteBtn => {
       purchasedItems.splice(index, 1);
       localStorage.setItem("purchasedItems", JSON.stringify(purchasedItems));
       updateTotal();
+      emptyOrNah();
     }
   });
 });
-zz
+
 // Js for profile options
 let profile = document.querySelector('.navEnd img')
 let profileMenu = document.querySelector('#navAccList')

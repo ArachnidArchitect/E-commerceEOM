@@ -5,9 +5,22 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
 
+
+  let shoppingCart = document.querySelector('i.fa-cart-shopping')
+let tester = JSON.parse(localStorage.getItem('purchasedItems'))
+
+    if (tester.length>0) {
+        shoppingCart.setAttribute("class", "fa-solid fa-cart-shopping fa-bounce");
+    }else{
+        console.log('im empty')
+        console.log(tester)
+    }
+    
+
+
 // This is a function that acts as a slide show for the boards that appear on the home screen
   function alternateCards(input) {
-      
+    console.log('i ran')  
       index = cards.indexOf(input)
       
         cards[index].style.display = 'block'

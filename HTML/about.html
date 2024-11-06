@@ -2,114 +2,148 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Surf Life - About us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Surf Life - About us</title>
 </head>
 
 <body>
-    <nav id="nav1">
-        <div class="logo"> <img src="../IMAGES/Logo.png" alt="Surf Life Logo"></div>
-        <div id="navLinks">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="./products.html">Products</a></li>
-                <li><a href="./HTML/contact.html">Contact</a></li>
-            </ul>
+  <nav id="nav1">
+    <div class="logo"> <img src="../IMAGES/Logo.png" alt="Surf Life Logo"></div>
+    <div id="navLinks">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="./products.html">Products</a></li>
+        <li><a href="./HTML/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="navEnd">
+      <a href="./cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+      <img src="../IMAGES/image.png (1).png" alt="">
+
+      <div id="any">
+        <ul id="navAccList">
+          <li>Login</li>
+          <li>Sign Up</li>
+          <li><a href="./admin.html">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+  <nav class="navbar bg-body-dark fixed-top bg-dark" id="nav2">
+    <div class="container-fluid justify-content-between">
+      <img src="../IMAGES/Logo.png" alt="Surf Life Logo">
+      <div>
+        <a href="./HTML/cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </button>
+      </div>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="navEnd">
-            <a href="./cart.html"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i></a>
-            <img src="../IMAGES/image.png (1).png" alt="">
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./HTML/products.html">Products</a>
+            </li>
 
-            <div id="any">
-                <ul id="navAccList">
-                    <li>Login</li>
-                    <li>Sign Up</li>
-                    <li><a href="./admin.html">Admin</a></li>
-                </ul>
-            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="./HTML/contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./HTML/admin.html">Admin</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main id="about">
+    <div class="about-row">
+      <div class="about-left-section"></div>
+      <div class="about-right-section">
+        <div class="right-section-header">
+          <h1>About Us</h1>
+        </div>
+        <div class="right-section-content">
+          <p>
+          <h2>Our Values and Beliefs</h2>
+          </p>
+          <p>
+            At SurfLife, we believe in the power of the ocean to inspire, invigorate, and bring people
+            together.</p>
+          <p>
+            Founded by a group of passionate surfers, our mission is to provide the best gear and
+            accessories to make your surfing experience unforgettable.</p>
+          <p>
+            Whether you're a seasoned pro or a beginner catching your first wave, we're here to support your
+            journey with quality products
+            and
+            expert advice.</p>
         </div>
 
-    </nav>
-    <nav class="navbar bg-body-tertiary fixed-top" id="nav2">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Offcanvas navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./products.html">Products</a>
-                  </li>
+      </div>
+    </div>
 
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./admin.html">Admin</a>
-                  </li>
-
-              </ul>
-            </div>
+      <div class="about-sec1">
+        <h2>Our Story</h2>
+        <p>
+          SurfLife started as a dream among friends who spent their days chasing waves and their nights discussing how they could share their love for surfing with the world. From humble beginnings in a small coastal town, we’ve grown into a trusted name in the surfing community. Our commitment to excellence and our deep-rooted passion for the sport are what set us apart.
+        </p>
+      </div>
+      <div class="about-sec2">
+        <h2>Our commitment to sustainability</h2>
+        <p>We love the ocean, and we’re dedicated to protecting it. SurfLife is committed to sustainable practices and environmentally friendly products. We work with eco-conscious brands and strive to minimize our environmental impact. Together, we can ensure that the waves we love today are here for future generations to enjoy.</p>
+      </div>
+  
+    <footer class="bg-dark text-center">
+      <div class=" d-flex flex-row justify-content-evenly">
+        <div class="d-flex flex-column">
+          <h4>FAQ</h4>
+          <h6>How do I track my order?</h6>
+          <h6>Where are you based</h6>
+          <h5></h5>
+        </div>
+        <div class="d-flex flex-column">
+          <h4>CONTACT US</h4>
+          <div class="d-flex flex-row">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/taahir68"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#0671358236"><i class="fa-brands fa-whatsapp"></i></a>
+  
           </div>
         </div>
-      </nav>
-
-    <main id="about">
-        <div class="about-row">
-            <div class="about-left-section"></div>
-            <div class="about-right-section">
-                <div class="right-section-header">
-                    <h1>About Us</h1>
-                </div>
-                <div class="right-section-content">
-                    <p>
-                    <h2>Our Values and Beliefs</h2>
-                    </p>
-                    <p>
-                        At SurfLife, we believe in the power of the ocean to inspire, invigorate, and bring people
-                        together.</p>
-                    <p>
-                        Founded by a group of passionate surfers, our mission is to provide the best gear and
-                        accessories to make your surfing experience unforgettable.</p>
-                    <p>
-                        Whether you're a seasoned pro or a beginner catching your first wave, we're here to support your
-                        journey with quality products
-                        and
-                        expert advice.</p>
-                </div>
-
-            </div>
-        </div>
-        </div>
-    </main>
-    <footer>
-        ©Surf Life Ltd. 2024
+  
+      </div>
+      ©Surf Life Ltd. 2024
     </footer>
-    <script src="../SCRIPTS/about.js"></script>
-    <script src="https://kit.fontawesome.com/eb25ce82bc.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
+  </main>
+  <script src="../SCRIPTS/about.js"></script>
+  <script src="https://kit.fontawesome.com/eb25ce82bc.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

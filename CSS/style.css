@@ -11,7 +11,14 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
+footer{
+    color: white;
+    padding: 2em;
+}
 
+.fa-cart-shopping{
+    animation-name: gelatine 0.5s infinite;
+}
 /* navbar */
 .logo {
     display: flex;
@@ -88,6 +95,13 @@ body {
     list-style: none;
     padding: .5em;
 }
+#navAccList li a, #navAccList li a:visited {
+    text-decoration: none;
+    color: #CDCCCC;
+}
+#navAccList li:hover {
+    background-color: #363636;
+}
 
 #navAccList :nth-child(2) {
     border-top: 2px rgba(0, 0, 0, 0.605) solid;
@@ -99,6 +113,7 @@ body {
 #landing {
     height: 100vh;
     background-image: url('../IMAGES/landingBg.jpg');
+    background-repeat: no-repeat;
     background-size: 100%;
     background-position-x: 80%;
 
@@ -137,7 +152,9 @@ body {
     animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
 }
-
+.mobile-landing-heading, .mobile-landing-brands{
+    display: none;
+}
 .LCTcard1 {
     display: none;
 }
@@ -151,6 +168,9 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+}
+.LCTRow1 img{
+    width:50%;
 }
 
 .tester {
@@ -442,7 +462,8 @@ i {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .right-section-header{
     font-weight: 900;
@@ -458,8 +479,40 @@ i {
     font-size: 2ch;
 }
 
+.about-sec1{
+    font-size: 1.5em;
+    padding: 2em;
+    color: #202020;
+    height: 60vh;
+    color: #e1e5f7;
+    background-image: url('/IMAGES/about-sec1.avif');
+    background-size: cover;
+    background-position-y: 70%;
+    text-shadow: 1px 3px 3px rgba(10, 0, 41, 0.513);
+    text-align: center;
+    font-weight: 600;
+    margin: 1em;
+    border-radius: 1em;
+    overflow-y: scroll;
+}
+.about-sec1 > p {
+    padding: 1.5em;
+}
 
-
+.about-sec2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('/IMAGES/about-sustainability.jpg');
+    background-size: cover;
+    background-position-y: 50% ;
+    height: 70vh;
+    padding: 1.5em;
+    font-size: 2ch;
+    font-weight: 800;
+margin: 1em;
+border-radius: 1em;
+}
 
 
 
@@ -564,7 +617,12 @@ form{
         transform: rotate3d(0,1,0, 90deg);
     }
 }
-
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
 
 /* media queries */
 /* landing */
@@ -577,10 +635,51 @@ form{
 
     }
     .offscreen-filter{
-        width: 50%;
+        border-radius: 50%;
     }
 }
-@media screen and (max-width:700px) {
+
+
+@media screen and (max-width:950px) {
+    .cardContainer{
+        height:30em;
+    padding: 0;  }
+        .landingCardTemplate{
+            width: 100%;
+            height: 100%;
+    
+        }
+        .LCTRow1{
+            justify-content: center;
+        }
+        #landing{
+            height: 100%;
+        }
+        .rad-shadow{
+            height: 100%;
+        }
+        .landingContainer{
+            height: 100%;
+        }
+        .landingTitle{
+            height: 100%;
+        }
+        .landingBrowse{
+            height: 100%;
+        }
+        .LCTRow1 img{
+            width: 40%;
+            height: 100%;
+        }
+        h1.stoked{
+            display: none;
+        }
+        .LCTRow2 h3{
+            font-size: 1em;
+        }
+}
+/* mobile landing */
+@media screen and (max-width:550px) {
     #nav1{
         display: none;}
     #nav2{
@@ -590,9 +689,67 @@ form{
         background-size: cover;
         background-position-x:50% ;
     }
+    .landingContainer{
+        flex-direction: column;
+    }
+    .mobile-landing-heading{
+        display: block;
+        margin-top: 150px;
+        color: white;
+        font-size: 30px;
+        padding: 0  0 0 1em;
+ 
+    }
+    .mobile-landing-heading a h1{
+        font-weight: 800;
+    }
+    .mobile-landing-heading a{
+        text-decoration: none;
+        color: white;
+        
+    }
+    .mobile-landing-heading a:visited{
+        text-decoration: none;
+        color: white;
+    }
+    .mobile-landing-brands{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .mobile-landing-brands img{
+        width: 120px;
+        padding: 1.8em;
+    }
+
     .cardContainer{
-        width: 40em;
-        height: 50em;
+        width:18em;
+        height:25em;
+        position: absolute;
+        top:30%;
+
+
+    }
+    .landingCardTemplate{
+        width: 110%;
+        height: 100%;
+
+    }
+    .LCTRow1{
+        justify-content: center;
+    }
+    .LCTRow1 img{
+        width: 80px;
+        height: 100%;
+    }
+    h1.stoked{
+        display: none;
+    }
+    .LCTRow2 h3{
+        font-size: 1em;
     }
     .landingBrowse{
         display: none;
@@ -601,18 +758,4 @@ form{
         display: none;
     }
 
-}
-
-@media screen and (max-width:550px) {
-
- .about-left-section{
-        width: 100%;
-    }
-    .about-right-section{
-        width: 80%;
-         position: absolute;
-        left: 5%;
-        background-color: rgba(0, 0, 0, 0.566);
-
-}
 }

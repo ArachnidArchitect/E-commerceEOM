@@ -66,6 +66,7 @@ buttons.forEach(button => {
     let value = button.value
     button.addEventListener('click', () => {
         addToArray(value)
+        
     })
 
 })
@@ -82,6 +83,7 @@ function addToArray(id) {
         }
     })
     localStorage.setItem('purchasedItems', JSON.stringify(purchasedItems))
+    emptyOrNah()
 }
 
 // // filter and nav hover
@@ -108,4 +110,16 @@ closeBtn.addEventListener('click', () => {
     filterSection.style.width = "0"
     offcanvasFilterBtn.style.display = "block"
 })
+let shoppingCart = document.querySelector('i.fa-cart-shopping')
 
+function emptyOrNah() {
+    let tester = JSON.parse(localStorage.getItem('purchasedItems'))
+    if (tester.length>0) {
+        shoppingCart.setAttribute("class", "fa-solid fa-cart-shopping fa-bounce");
+    }else{
+        console.log('im empty')
+        console.log(tester)
+    }
+    
+}
+emptyOrNah()
